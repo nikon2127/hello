@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hello"
+version = "0.1.0"
+description = "herownik"
+authors = ["herownik <nikon2127@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+colorama = "^0.4.4"
+
+[tool.poetry.scripts]
+say-hello = "hello.scripts.say_hello:main"
+say-w = "hello.scripts.say_w:main"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ipython = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
